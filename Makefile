@@ -6,13 +6,13 @@
 #    By: dbelarmi <dbelarmi@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/10 12:57:24 by dbelarmi          #+#    #+#              #
-#    Updated: 2022/11/10 13:53:26 by dbelarmi         ###   ########.fr        #
+#    Updated: 2022/11/10 20:37:33 by dbelarmi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	= libftprintf.a
 
-SRCS	= ft_printf.c ft_puts.c 
+SRCS	= ft_printf.c ft_puts.c ft_puthax.c
 
 OBJS	= ${SRCS:.c=.o}
 
