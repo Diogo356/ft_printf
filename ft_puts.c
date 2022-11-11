@@ -6,28 +6,28 @@
 /*   By: dbelarmi <dbelarmi@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 13:06:54 by dbelarmi          #+#    #+#             */
-/*   Updated: 2022/11/10 15:35:35 by dbelarmi         ###   ########.fr       */
+/*   Updated: 2022/11/11 15:39:31 by dbelarmi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_putchar(char c)
+int	ft_putchar(char c)
 {
 	write(1, &c, 1);
 	return (1);
 }
 
-int ft_putstr(char *str)
+int	ft_putstr(char *str)
 {
-	int i;
-	int count;
+	int	i;
+	int	count;
 
 	count = 0;
-	i  = 0;
-	if(str)
+	i = 0;
+	if (str)
 	{
-		while(str[i] != '\0')
+		while (str[i] != '\0')
 		{
 			count += ft_putchar(str[i]);
 			i++;
@@ -40,7 +40,7 @@ int ft_putstr(char *str)
 
 int	ft_putnbr(int nb)
 {
-	int count;
+	int	count;
 
 	count = 0;
 	if (nb <= -2147483648)
@@ -60,17 +60,18 @@ int	ft_putnbr(int nb)
 		nb = nb % 10;
 	}
 	count += ft_putchar(nb + 48);
-	return(count);
+	return (count);
 }
 
-int ft_putUnsig(unsigned int nb)
+int	ft_putunsig(unsigned int nb)
 {
-	int count;
+	int	count;
 
 	count = 0;
 	if (nb < 0)
 	{
-		count += (nb *= 4294967295);
+		nb *= 4294967295;
+		count += nb;
 	}
 	if (nb > 9)
 	{
@@ -78,5 +79,5 @@ int ft_putUnsig(unsigned int nb)
 		nb = nb % 10;
 	}
 	count += ft_putchar(nb + 48);
-	return(count);
+	return (count);
 }

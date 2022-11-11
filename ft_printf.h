@@ -6,7 +6,7 @@
 /*   By: dbelarmi <dbelarmi@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 13:07:25 by dbelarmi          #+#    #+#             */
-/*   Updated: 2022/11/10 20:47:26 by dbelarmi         ###   ########.fr       */
+/*   Updated: 2022/11/11 15:29:25 by dbelarmi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,12 @@ int		ft_validation(char format, va_list ap);
 int		ft_putchar(char c);
 int		ft_putstr(char *str);
 int		ft_putnbr(int nb);
-int     ft_putUnsig(unsigned int nb);
-int     ft_puthax(unsigned long nb, int flag);
+int		ft_putunsig(unsigned int nb);
+int		ft_puthax_lower(unsigned long nb, int flag);
+int		ft_puthax_uper(unsigned long nb, int flag);
+int		ft_len_nbr(unsigned long long int nb);
+int		ft_put_pt(unsigned long n);
+void	ft_bzero(void *s, size_t n);
+void	*ft_calloc(size_t nelem, size_t elsize);
 
 #endif
