@@ -6,7 +6,7 @@
 /*   By: dbelarmi <dbelarmi@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 13:06:32 by dbelarmi          #+#    #+#             */
-/*   Updated: 2022/11/11 15:35:46 by dbelarmi         ###   ########.fr       */
+/*   Updated: 2023/03/26 16:31:31 by dbelarmi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,86 +62,3 @@ int	ft_validation(char format, va_list ap)
 		count += ft_put_pt(va_arg(ap, unsigned long ));
 	return (count);
 }
-
-// int main(void)
-// {
-// 	char *c = ;
-// 	int i;
-// 	int j = 34555;
-// 	char h = 'a';
-// 	unsigned int u = 24;
-
-// 	//meu printf;
-// 	i = ft_printf("\nteste meu = %s\n", c);
-// 	printf("saida do meu = %i\n", i);
-
-// 	//printf original;
-// 	i = printf("\nteste ori = %s\n", c);
-// 	printf("saida da maquina = %i\n", i);
-
-// 	//meu printf
-// 	i = ft_printf("\nteste meu = %c\n", h);
-// 	printf("saida do meu = %i\n", i);
-
-// 	//printf original;
-// 	i = printf("\nteste ori = %c\n", h);
-// 	printf("saida da maquina = %i\n", i);
-
-// 	//meu printf;
-// 	i = ft_printf("\nteste meu = %%\n");
-// 	printf("saida do meu = %i\n", i);
-
-// 	//printf original;
-// 	i = printf("\nteste ori = %%\n");
-// 	printf("saida da maquina = %i\n", i);
-
-// 	//meu printf;
-// 	i = ft_printf("\nteste meu = %i\n", j);
-// 	printf("saida do meu = %i\n", i);
-
-// 	//printf original;
-// 	i = printf("\nteste ori = %i\n", j);
-// 	printf("saida da maquina = %i\n", i);
-
-// 		//meu printf;
-// 	i = ft_printf("\nteste meu = %d\n", j);
-// 	printf("saida do meu = %i\n", i);
-
-// 	//printf original;
-// 	i = printf("\nteste ori = %d\n", j);
-// 	printf("saida da maquina = %i\n", i);
-
-// 		//meu printf;
-// 	i = ft_printf("\nteste meu = %u\n", u);
-// 	printf("saida do meu = %i\n", i);
-
-// 	//printf original;
-// 	i = printf("\nteste ori = %u\n", u);
-// 	printf("saida da maquina = %i\n", i);
-
-// 		//meu printf;
-// 	i = ft_printf("\nteste meu = %x\n", c);
-// 	printf("saida do meu = %i\n", i);
-
-// 	//printf original;
-// 	i = printf("\nteste ori = %x\n", c);
-// 	printf("saida da maquina = %i\n", i);
-
-// 		//meu printf;
-// 	i = ft_printf("\nteste meu = %X\n", c);
-// 	printf("saida do meu = %i\n", i);
-
-// 	//printf original;
-// 	i = printf("\nteste ori = %X\n", c);
-// 	printf("saida da maquina = %i\n", i);
-
-// 		//meu printf;
-// 	i = ft_printf("\nteste meu = %p\n", 0);
-// 	printf("saida do meu = %i\n", i);
-
-// 	//printf original;
-// 	i = printf("\nteste ori = %p\n", 0);
-// 	printf("saida da maquina = %i\n", i);
-
-// return (0);
-//  }

@@ -6,7 +6,7 @@
 /*   By: dbelarmi <dbelarmi@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 13:06:54 by dbelarmi          #+#    #+#             */
-/*   Updated: 2022/11/11 15:39:31 by dbelarmi         ###   ########.fr       */
+/*   Updated: 2023/03/26 16:23:24 by dbelarmi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,12 +68,12 @@ int	ft_putunsig(unsigned int nb)
 	int	count;
 
 	count = 0;
-	if (nb < 0)
+	if ((int)nb < 0)
 	{
 		nb *= 4294967295;
 		count += nb;
 	}
-	if (nb > 9)
+	if ((unsigned int)nb > 9)
 	{
 		count += ft_putnbr(nb / 10);
 		nb = nb % 10;

@@ -6,7 +6,7 @@
 /*   By: dbelarmi <dbelarmi@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 13:45:14 by dbelarmi          #+#    #+#             */
-/*   Updated: 2022/11/11 15:28:03 by dbelarmi         ###   ########.fr       */
+/*   Updated: 2023/03/26 16:24:59 by dbelarmi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_bzero(void *s, size_t n)
 {
 	size_t	i;
 
-	if (n >= 0)
+	if (!n)
 	{
 		i = 0;
 		while (i < n)
